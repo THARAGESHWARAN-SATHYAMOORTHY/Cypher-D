@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# pip install eth-account
+
 import requests
 from eth_account import Account
 
@@ -12,6 +14,18 @@ def create_wallet():
         if data.get('success'):
             return data
     return None
+
+def delete_wallet(address):
+    """Delete a wallet by address"""
+    try:
+        response = requests.delete(f"{BASE_URL}/api/wallet/{address}")
+        if response.status_code == 200:
+            data = response.json()
+            return data.get('success', False)
+        return False
+    except Exception as e:
+        print(f"Error deleting wallet {address[:10]}...: {e}")
+        return False
 
 def test_complete_flow():
     # Test complete wallet flow
@@ -66,9 +80,11 @@ def test_complete_flow():
         Account.enable_unaudited_hdwallet_features()
         account = Account.from_mnemonic(wallet1['mnemonic'])
         
-        # Sign the message
-        message_hash = account.sign_message(initiate_data['message'].encode())
-        signature = message_hash.signature.hex()
+        # Sign the message using EIP-191 standard (same as frontend)
+        from eth_account.messages import encode_defunct
+        encoded_message = encode_defunct(text=initiate_data['message'])
+        signed_message = account.sign_message(encoded_message)
+        signature = signed_message.signature.hex()
         print(f"   Message signed successfully")
         print(f"   Signature: {signature[:20]}...")
         
@@ -128,6 +144,21 @@ def test_complete_flow():
                 tx = transactions[0]
                 print(f"   Latest transaction: {tx['type']} {tx['amount']} ETH to {tx['to_address'][:10]}...")
 
+    # Step 7: Cleanup - Delete test wallets
+    print(f"\nCleaning up test wallets...")
+    
+    print(f"   Deleting Wallet 1...")
+    if delete_wallet(wallet1['address']):
+        print(f"   ✓ Wallet 1 deleted successfully")
+    else:
+        print(f"   ✗ Failed to delete Wallet 1")
+    
+    print(f"   Deleting Wallet 2...")
+    if delete_wallet(wallet2['address']):
+        print(f"   ✓ Wallet 2 deleted successfully")
+    else:
+        print(f"   ✗ Failed to delete Wallet 2")
+
     print("\n" + "=" * 50)
     print("Complete flow test PASSED!")
     print("\nSummary:")
@@ -136,6 +167,7 @@ def test_complete_flow():
     print(f"   • Executed transfer with signature verification")
     print(f"   • Updated balances correctly")
     print(f"   • Transaction history recorded")
+    print(f"   • Cleaned up test wallets")
     print("\nCypherD Wallet is working perfectly!")
     print("\nAccess the frontend at: http://localhost:3000")
     print("Backend API at: http://localhost:5001")
