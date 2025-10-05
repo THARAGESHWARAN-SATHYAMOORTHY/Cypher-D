@@ -31,51 +31,51 @@ Here's a complete walkthrough of the CypherD wallet application:
 *Wallet creation interface showing the option to generate a new 12-word mnemonic phrase.*
 
 ### 3. Mnemonic Phrase Display
-![Mnemonic Phrase](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.19%20AM.png)
+![Mnemonic Phrase](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.19%E2%80%AFAM.png)
 *Generated mnemonic phrase display with security warning and copy functionality.*
 
 ### 4. Mnemonic Confirmation
-![Mnemonic Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.26%20AM.png)
+![Mnemonic Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.26%E2%80%AFAM.png)
 *Verification step where users must enter their mnemonic phrase to confirm wallet creation.*
 
 ### 5. Wallet List View
-![Wallet List](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.41%20AM.png)
+![Wallet List](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.41%E2%80%AFAM.png)
 *Main wallet dashboard showing all created wallets with balances and management options.*
 
 ### 6. Wallet Dashboard
-![Wallet Dashboard](https://raw.githubusercontent.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/main/demo-ss/Screenshot_2025-10-05_at_11.58.54%20AM.png)
+![Wallet Dashboard](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.54%E2%80%AFAM.png)
 *Individual wallet dashboard displaying balance, address, and quick actions.*
 
 ### 7. Send ETH Interface
-![Send ETH](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.59.02%20AM.png)
+![Send ETH](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.59.02%E2%80%AFAM.png)
 *Transfer form for sending ETH to another address with amount input and recipient details.*
 
 ### 8. Transaction Confirmation
-![Transaction Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.59.06%20AM.png)
+![Transaction Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.59.06%E2%80%AFAM.png)
 *Transaction review screen showing details before digital signature approval.*
 
 ### 9. USD Transfer Option
-![USD Transfer](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.26%20PM.png)
+![USD Transfer](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.26%E2%80%AFPM.png)
 *Send USD amount interface with real-time ETH conversion using external price API.*
 
 ### 10. USD Transfer Confirmation
-![USD Transfer Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.38%20PM.png)
+![USD Transfer Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.38%E2%80%AFPM.png)
 *USD transfer review showing converted ETH amount and exchange rate.*
 
 ### 11. Transaction Success
-![Transaction Success](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.42%20PM.png)
+![Transaction Success](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.42%E2%80%AFPM.png)
 *Success notification after completed transaction with email confirmation details.*
 
 ### 12. Transaction History
-![Transaction History](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.55%20PM.png)
+![Transaction History](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.55%E2%80%AFPM.png)
 *Complete transaction history showing all past transfers with timestamps and status.*
 
 ### 13. Wallet Management
-![Wallet Management](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.02.06%20PM.png)
+![Wallet Management](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.02.06%E2%80%AFPM.png)
 *Wallet management interface with options to edit names, delete wallets, and view details.*
 
 ### 14. Import Existing Wallet
-![Import Wallet](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.02.26%20PM.png)
+![Import Wallet](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.02.26%E2%80%AFPM.png)
 *Import existing wallet interface where users can enter their 12-word mnemonic phrase.*
 
 ## 🏗️ Architecture
