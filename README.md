@@ -71,6 +71,62 @@ Here's a complete walkthrough of the CypherD wallet application:
 - **Notifications**: Email via SMTP
 - **Database**: SQLite with SQLAlchemy ORM
 
+## 🗄️ Database
+
+### Database Technology
+- **SQLite**: Lightweight, serverless database perfect for development and small-scale applications
+- **SQLAlchemy ORM**: Object-Relational Mapping for Python, providing database abstraction and easy data manipulation
+- **File Location**: `backend/wallet.db` (created automatically on first run)
+
+### Database Schema
+
+The application uses three main tables:
+
+#### 1. `wallets` Table
+```sql
+- id (Integer, Primary Key)
+- address (String, Unique, Indexed) - Ethereum wallet address
+- balance (Float) - Current ETH balance
+- created_at (DateTime) - Wallet creation timestamp
+```
+
+#### 2. `transactions` Table
+```sql
+- id (Integer, Primary Key)
+- from_address (String, Indexed) - Sender's wallet address
+- to_address (String, Indexed) - Recipient's wallet address
+- amount (Float) - Transaction amount in ETH
+- amount_usd (Float, Nullable) - USD equivalent (for USD transfers)
+- status (String) - Transaction status (pending/completed)
+- signature (Text, Nullable) - Digital signature for verification
+- created_at (DateTime) - Transaction timestamp
+```
+
+#### 3. `pending_transfers` Table
+```sql
+- id (Integer, Primary Key)
+- from_address (String) - Sender's wallet address
+- to_address (String) - Recipient's wallet address
+- amount (Float) - Transfer amount in ETH
+- amount_usd (Float, Nullable) - USD equivalent
+- message (Text) - Message to be signed
+- expires_at (DateTime) - Transfer expiration time
+- created_at (DateTime) - Transfer initiation timestamp
+```
+
+### Database Features
+- **Automatic Table Creation**: Tables are created automatically when the application starts
+- **Data Persistence**: All wallet data, balances, and transaction history are persisted
+- **Transaction Safety**: Pending transfers with expiration for security
+- **Digital Signature Storage**: Transaction signatures are stored for verification
+- **USD/ETH Conversion Tracking**: Both ETH and USD amounts are stored for USD transfers
+
+### Database Management
+- **Initialization**: Run `python init_db.py` to create/initialize the database
+- **Viewing Data**: Use `python view_db.py` to inspect database contents
+- **Location**: Database file is stored as `backend/wallet.db`
+- **Backup**: Simply copy the `wallet.db` file to backup your data
+
 ## 🚀 Quick Start
 
 ### Prerequisites
