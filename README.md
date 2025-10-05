@@ -12,56 +12,6 @@ A simple, functional mock web3 wallet application built with Python Flask backen
 - **Real Notifications**: Email notifications for successful transactions
 - **Security**: Digital signature verification and price tolerance checks
 
-## 🎬 Demo Video
-
-Watch the complete CypherD wallet application in action:
-
-https://github.com/user-attachments/assets/c8c5dea7-d0c0-4fd9-b21c-5c0046b822ce
-
-
-## 📷 Demo Screenshots
-
-Here's a complete walkthrough of the CypherD wallet application:
-
-### 1. Welcome & Wallet Setup
-![Welcome Screen](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.55.46%E2%80%AFAM.png)
-
-### 2. Create New Wallet using IMPORT EXISTING WALLENT
-![Create Wallet](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.56.45%E2%80%AFAM.png)
-
-### 3. Enter the phrase and IMPORT WALLET
-![Mnemonic Phrase](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.19%E2%80%AFAM.png)
-
-### 4. Wallet will be displayed here
-![Mnemonic Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.26%E2%80%AFAM.png)
-
-### 5. You can also create a new wallet and it will be displayed here
-![Wallet List](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.41%E2%80%AFAM.png)
-
-### 6. Wallet Dashboard
-![Wallet Dashboard](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.54%E2%80%AFAM.png)
-
-### 7. Send ETH Interface
-![Send ETH](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.59.02%E2%80%AFAM.png)
-
-### 8. Transaction Histroy Interface
-![Transaction Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.59.06%E2%80%AFAM.png)
-
-### 9. Copy the Address of the wallet to which we need to send ETH
-![USD Transfer](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.26%E2%80%AFPM.png)
-
-### 10. Enter the Recipient Address and Amount and choose either ETH or USD
-![USD Transfer Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.38%E2%80%AFPM.png)
-
-### 11. Sign and Send
-![Transaction Success](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.42%E2%80%AFPM.png)
-
-### 12. Transaction History
-![Transaction History](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.55%E2%80%AFPM.png)
-
-### 13. Notification via Mail
-![Import Wallet](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.02.26%E2%80%AFPM.png)
-
 ## 🏛️ Architecture
 
 - **Backend**: Python Flask API with SQLite database
@@ -259,3 +209,53 @@ Cypher-D/
 
 ## Detailed Cryptography Guide
 For a comprehensive explanation with step-by-step examples of how mnemonic generation, key derivation, and digital signatures work, see **[CRYPTOGRAPHY_EXPLAINED.md](CRYPTOGRAPHY_EXPLAINED.md)**
+
+## 🎬 Demo Video
+
+Watch the complete CypherD wallet application in action:
+
+https://github.com/user-attachments/assets/c8c5dea7-d0c0-4fd9-b21c-5c0046b822ce
+
+
+## 📷 Demo Screenshots
+
+Here's a complete walkthrough of the CypherD wallet application:
+
+### 1. Welcome & Wallet Setup
+![Welcome Screen](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.55.46%E2%80%AFAM.png)
+
+### 2. Create New Wallet using IMPORT EXISTING WALLENT
+![Create Wallet](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.56.45%E2%80%AFAM.png)
+
+### 3. Enter the phrase and IMPORT WALLET
+![Mnemonic Phrase](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.19%E2%80%AFAM.png)
+
+### 4. Wallet will be displayed here
+![Mnemonic Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.26%E2%80%AFAM.png)
+
+### 5. You can also create a new wallet and it will be displayed here
+![Wallet List](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.41%E2%80%AFAM.png)
+
+### 6. Wallet Dashboard
+![Wallet Dashboard](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.54%E2%80%AFAM.png)
+
+### 7. Send ETH Interface
+![Send ETH](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.59.02%E2%80%AFAM.png)
+
+### 8. Transaction Histroy Interface
+![Transaction Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.59.06%E2%80%AFAM.png)
+
+### 9. Copy the Address of the wallet to which we need to send ETH
+![USD Transfer](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.26%E2%80%AFPM.png)
+
+### 10. Enter the Recipient Address and Amount and choose either ETH or USD
+![USD Transfer Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.38%E2%80%AFPM.png)
+
+### 11. Sign and Send
+![Transaction Success](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.42%E2%80%AFPM.png)
+
+### 12. Transaction History
+![Transaction History](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.55%E2%80%AFPM.png)
+
+### 13. Notification via Mail
+![Import Wallet](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.02.26%E2%80%AFPM.png)
