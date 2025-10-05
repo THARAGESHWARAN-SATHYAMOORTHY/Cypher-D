@@ -30,7 +30,7 @@ const WalletList = ({ onSelectWallet, onCreateWallet, onDeleteWallet }) => {
   const [wallets, setWallets] = useState([]);
   const [deleteDialog, setDeleteDialog] = useState({ open: false, wallet: null });
   const [editDialog, setEditDialog] = useState({ open: false, wallet: null, newName: '' });
-  const [copied, setCopied] = useState(false);
+  const [copiedAddresses, setCopiedAddresses] = useState(new Set());
 
   useEffect(() => {
     loadWallets();
@@ -87,8 +87,14 @@ const WalletList = ({ onSelectWallet, onCreateWallet, onDeleteWallet }) => {
 
   const copyAddress = (address) => {
     navigator.clipboard.writeText(address);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    setCopiedAddresses(prev => new Set(prev).add(address));
+    setTimeout(() => {
+      setCopiedAddresses(prev => {
+        const newSet = new Set(prev);
+        newSet.delete(address);
+        return newSet;
+      });
+    }, 2000);
   };
 
   const formatAddress = (address) => {
@@ -190,7 +196,7 @@ const WalletList = ({ onSelectWallet, onCreateWallet, onDeleteWallet }) => {
                           size="small"
                           onClick={() => copyAddress(wallet.address)}
                         >
-                          {copied ? <CheckCircle color="success" /> : <ContentCopy />}
+                          {copiedAddresses.has(wallet.address) ? <CheckCircle color="success" /> : <ContentCopy />}
                         </IconButton>
                       </Box>
                     </Paper>

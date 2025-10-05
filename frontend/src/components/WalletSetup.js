@@ -168,6 +168,7 @@ const WalletSetup = ({ onWalletCreated, onWalletImported, onError, loading, setL
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
               Generate a new 12-word mnemonic phrase and create a unique wallet address.
+              <br/>
               You'll start with a random amount of mock ETH (1-10 ETH).
             </Typography>
             
