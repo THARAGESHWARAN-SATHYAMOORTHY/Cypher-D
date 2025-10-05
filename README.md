@@ -23,11 +23,11 @@ Watch the complete CypherD wallet application in action:
 Here's a complete walkthrough of the CypherD wallet application:
 
 ### 1. Welcome & Wallet Setup
-![Welcome Screen](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.55.46%20AM.png)
+![Welcome Screen](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.55.46%E2%80%AFAM.png)
 *Initial welcome screen where users can create a new wallet or import an existing one.*
 
 ### 2. Create New Wallet
-![Create Wallet](https://raw.githubusercontent.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/main/demo-ss/Screenshot_2025-10-05_at_11.56.45%20AM.png)
+![Create Wallet](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.56.45%E2%80%AFAM.png)
 *Wallet creation interface showing the option to generate a new 12-word mnemonic phrase.*
 
 ### 3. Mnemonic Phrase Display
