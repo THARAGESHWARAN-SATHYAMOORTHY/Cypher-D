@@ -71,18 +71,6 @@ Here's a complete walkthrough of the CypherD wallet application:
 - **Notifications**: Email via SMTP
 - **Database**: SQLite with SQLAlchemy ORM
 
-## 🗄️ Database
-
-### Database Technology
-- **SQLite**: Lightweight, serverless database perfect for development and small-scale applications
-- **SQLAlchemy ORM**: Object-Relational Mapping for Python, providing database abstraction and easy data manipulation
-- **File Location**: `backend/wallet.db` (created automatically on first run)
-
-## 🔐 Cryptography & Security
-
-### Detailed Cryptography Guide
-For a comprehensive explanation with step-by-step examples of how mnemonic generation, key derivation, and digital signatures work, see **[CRYPTOGRAPHY_EXPLAINED.md](CRYPTOGRAPHY_EXPLAINED.md)**
-
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -201,27 +189,6 @@ EMAIL_PASS=your-app-password
 - **Secure Mnemonic Handling**: Mnemonics stored locally in browser
 - **Address Validation**: Proper Ethereum address format checking
 
-## 🛠️ Tech Stack
-
-### Backend
-- **Python 3.8+**: Core language
-- **Flask**: Web framework
-- **SQLAlchemy**: Database ORM
-- **SQLite**: Database
-- **eth-account**: Ethereum wallet operations
-- **mnemonic**: BIP39 mnemonic generation
-- **requests**: HTTP client for external APIs
-
-### Frontend
-- **React 18**: UI framework
-- **Material-UI**: Component library
-- **ethers.js**: Ethereum utilities
-- **Axios**: HTTP client (via fetch)
-
-### External Services
-- **Skip API**: USD/ETH price conversion
-- **SMTP**: Email notifications
-
 ## 📁 Project Structure
 
 ```
@@ -268,3 +235,29 @@ Cypher-D/
 ├── view_db.py            # Database viewer utility
 └── README.md             # This file
 ```
+
+## 🛠️ Tech Stack
+
+### Backend
+- **Python 3.8+**: Core language
+- **Flask**: Web framework
+- **SQLAlchemy**: Database ORM
+- **SQLite**: Database
+- **eth-account**: Ethereum wallet operations
+- **mnemonic**: BIP39 mnemonic generation
+- **requests**: HTTP client for external APIs
+
+### Frontend
+- **React 18**: UI framework
+- **Material-UI**: Component library
+- **ethers.js**: Ethereum utilities
+- **Axios**: HTTP client (via fetch)
+
+### External Services
+- **Skip API**: USD/ETH price conversion
+- **SMTP**: Email notifications
+
+## 🔐 Cryptography & Security
+
+### Detailed Cryptography Guide
+For a comprehensive explanation with step-by-step examples of how mnemonic generation, key derivation, and digital signatures work, see **[CRYPTOGRAPHY_EXPLAINED.md](CRYPTOGRAPHY_EXPLAINED.md)**
