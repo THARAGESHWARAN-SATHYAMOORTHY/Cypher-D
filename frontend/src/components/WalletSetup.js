@@ -35,6 +35,7 @@ const WalletSetup = ({ onWalletCreated, onWalletImported, onError, loading, setL
       if (data.success) {
         setGeneratedMnemonic(data.mnemonic);
         setShowMnemonic(true);
+        // Store the wallet data with mnemonic for signing
         onWalletCreated(data);
       } else {
         onError(data.error || 'Failed to create wallet');
@@ -67,7 +68,12 @@ const WalletSetup = ({ onWalletCreated, onWalletImported, onError, loading, setL
       const data = await response.json();
       
       if (data.success) {
-        onWalletImported(data);
+        // Add the mnemonic to the wallet data for signing
+        const walletDataWithMnemonic = {
+          ...data,
+          mnemonic: mnemonic.trim()
+        };
+        onWalletImported(walletDataWithMnemonic);
       } else {
         onError(data.error || 'Failed to import wallet');
       }
