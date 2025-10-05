@@ -129,41 +129,6 @@ The application uses three main tables:
 
 ## 🔐 Cryptography & Security
 
-### Mnemonic Phrase Generation
-- **BIP39 Standard**: Uses the industry-standard BIP39 mnemonic generation
-- **12-Word Phrases**: Generates cryptographically secure 12-word mnemonic phrases
-- **Entropy**: 128-bit entropy ensures 2^128 possible combinations
-- **Language**: English wordlist for maximum compatibility
-- **Library**: Python `mnemonic` library for secure generation
-
-### Key Derivation Process
-1. **Mnemonic Generation**: 12 random words from BIP39 wordlist
-2. **Seed Creation**: Mnemonic converted to 512-bit seed using PBKDF2
-3. **HD Wallet**: Hierarchical Deterministic (HD) wallet derivation
-4. **Private Key**: 256-bit private key derived from seed
-5. **Public Key**: Elliptic curve public key derived from private key
-6. **Address**: Ethereum address generated from public key (Keccak-256 hash)
-
-### Digital Signatures
-- **Algorithm**: ECDSA (Elliptic Curve Digital Signature Algorithm)
-- **Curve**: secp256k1 (same as Bitcoin and Ethereum)
-- **Message Encoding**: EIP-191 standard for Ethereum message signing
-- **Signature Format**: 65-byte signature (r, s, v components)
-- **Verification**: Signature recovery to verify wallet ownership
-
-### Security Features
-- **Private Key Isolation**: Private keys never leave the client-side
-- **Mnemonic Storage**: Mnemonics stored locally in browser localStorage
-- **Message Signing**: All transactions require digital signature verification
-- **Time-Limited Approvals**: Transfer approvals expire after 30 seconds
-- **Signature Recovery**: Server verifies signatures without storing private keys
-
-### Cryptographic Libraries
-- **Backend**: `eth-account` for Ethereum wallet operations
-- **Backend**: `mnemonic` for BIP39 mnemonic generation
-- **Frontend**: `ethers.js` for client-side cryptographic operations
-- **Standards**: EIP-191, BIP39, BIP32, BIP44 compliance
-
 ### Detailed Cryptography Guide
 For a comprehensive explanation with step-by-step examples of how mnemonic generation, key derivation, and digital signatures work, see **[CRYPTOGRAPHY_EXPLAINED.md](CRYPTOGRAPHY_EXPLAINED.md)**
 
