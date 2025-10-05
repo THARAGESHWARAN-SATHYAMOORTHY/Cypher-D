@@ -78,55 +78,6 @@ Here's a complete walkthrough of the CypherD wallet application:
 - **SQLAlchemy ORM**: Object-Relational Mapping for Python, providing database abstraction and easy data manipulation
 - **File Location**: `backend/wallet.db` (created automatically on first run)
 
-### Database Schema
-
-The application uses three main tables:
-
-#### 1. `wallets` Table
-```sql
-- id (Integer, Primary Key)
-- address (String, Unique, Indexed) - Ethereum wallet address
-- balance (Float) - Current ETH balance
-- created_at (DateTime) - Wallet creation timestamp
-```
-
-#### 2. `transactions` Table
-```sql
-- id (Integer, Primary Key)
-- from_address (String, Indexed) - Sender's wallet address
-- to_address (String, Indexed) - Recipient's wallet address
-- amount (Float) - Transaction amount in ETH
-- amount_usd (Float, Nullable) - USD equivalent (for USD transfers)
-- status (String) - Transaction status (pending/completed)
-- signature (Text, Nullable) - Digital signature for verification
-- created_at (DateTime) - Transaction timestamp
-```
-
-#### 3. `pending_transfers` Table
-```sql
-- id (Integer, Primary Key)
-- from_address (String) - Sender's wallet address
-- to_address (String) - Recipient's wallet address
-- amount (Float) - Transfer amount in ETH
-- amount_usd (Float, Nullable) - USD equivalent
-- message (Text) - Message to be signed
-- expires_at (DateTime) - Transfer expiration time
-- created_at (DateTime) - Transfer initiation timestamp
-```
-
-### Database Features
-- **Automatic Table Creation**: Tables are created automatically when the application starts
-- **Data Persistence**: All wallet data, balances, and transaction history are persisted
-- **Transaction Safety**: Pending transfers with expiration for security
-- **Digital Signature Storage**: Transaction signatures are stored for verification
-- **USD/ETH Conversion Tracking**: Both ETH and USD amounts are stored for USD transfers
-
-### Database Management
-- **Initialization**: Run `python init_db.py` to create/initialize the database
-- **Viewing Data**: Use `python view_db.py` to inspect database contents
-- **Location**: Database file is stored as `backend/wallet.db`
-- **Backup**: Simply copy the `wallet.db` file to backup your data
-
 ## 🔐 Cryptography & Security
 
 ### Detailed Cryptography Guide
@@ -317,32 +268,3 @@ Cypher-D/
 ├── view_db.py            # Database viewer utility
 └── README.md             # This file
 ```
-
-## 🎓 Learning Objectives
-
-This project demonstrates:
-
-1. **Wallet Generation**: Creating Ethereum wallets from mnemonic phrases
-2. **Digital Signatures**: Signing and verifying transaction messages
-3. **Blockchain Concepts**: Addresses, transactions, and verification
-4. **API Integration**: Real-time price conversion and external services
-5. **Security**: Proper signature verification and transaction validation
-6. **Full-Stack Development**: Backend API and frontend integration
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **Backend won't start**: Check Python version and dependencies
-2. **Frontend build fails**: Ensure Node.js 16+ is installed
-3. **Database errors**: Run `python init_db.py` to recreate tables
-4. **Email not sending**: Verify SMTP credentials in `.env` file
-5. **API connection errors**: Ensure backend is running on port 5000
-
-### Development Tips
-
-- Use browser developer tools to inspect network requests
-- Check backend logs for detailed error messages
-- Verify database tables exist in `wallet.db`
-- Test API endpoints directly using curl or Postman
-
