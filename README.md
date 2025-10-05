@@ -164,6 +164,9 @@ The application uses three main tables:
 - **Frontend**: `ethers.js` for client-side cryptographic operations
 - **Standards**: EIP-191, BIP39, BIP32, BIP44 compliance
 
+### Detailed Cryptography Guide
+For a comprehensive explanation with step-by-step examples of how mnemonic generation, key derivation, and digital signatures work, see **[CRYPTOGRAPHY_EXPLAINED.md](CRYPTOGRAPHY_EXPLAINED.md)**
+
 ## 🚀 Quick Start
 
 ### Prerequisites
