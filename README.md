@@ -12,6 +12,72 @@ A simple, functional mock web3 wallet application built with Python Flask backen
 - **📧 Real Notifications**: Email notifications for successful transactions
 - **🛡️ Security**: Digital signature verification and price tolerance checks
 
+## 🎬 Demo Video
+
+Watch the complete CypherD wallet application in action:
+
+[![CypherD Wallet Demo](demo-ss/Screenshot_2025-10-05_at_11.55.46_AM.png)](demo/Screen%20Recording%202025-10-05%20at%2012.22.16%20PM.mov)
+
+## 📸 Demo Screenshots
+
+Here's a complete walkthrough of the CypherD wallet application:
+
+### 1. Welcome & Wallet Setup
+![Welcome Screen](demo-ss/Screenshot_2025-10-05_at_11.55.46_AM.png)
+*Initial welcome screen where users can create a new wallet or import an existing one.*
+
+### 2. Create New Wallet
+![Create Wallet](demo-ss/Screenshot_2025-10-05_at_11.56.45_AM.png)
+*Wallet creation interface showing the option to generate a new 12-word mnemonic phrase.*
+
+### 3. Mnemonic Phrase Display
+![Mnemonic Phrase](demo-ss/Screenshot_2025-10-05_at_11.58.19_AM.png)
+*Generated mnemonic phrase display with security warning and copy functionality.*
+
+### 4. Mnemonic Confirmation
+![Mnemonic Confirmation](demo-ss/Screenshot_2025-10-05_at_11.58.26_AM.png)
+*Verification step where users must enter their mnemonic phrase to confirm wallet creation.*
+
+### 5. Wallet List View
+![Wallet List](demo-ss/Screenshot_2025-10-05_at_11.58.41_AM.png)
+*Main wallet dashboard showing all created wallets with balances and management options.*
+
+### 6. Wallet Dashboard
+![Wallet Dashboard](demo-ss/Screenshot_2025-10-05_at_11.58.54_AM.png)
+*Individual wallet dashboard displaying balance, address, and quick actions.*
+
+### 7. Send ETH Interface
+![Send ETH](demo-ss/Screenshot_2025-10-05_at_11.59.02_AM.png)
+*Transfer form for sending ETH to another address with amount input and recipient details.*
+
+### 8. Transaction Confirmation
+![Transaction Confirmation](demo-ss/Screenshot_2025-10-05_at_11.59.06_AM.png)
+*Transaction review screen showing details before digital signature approval.*
+
+### 9. USD Transfer Option
+![USD Transfer](demo-ss/Screenshot_2025-10-05_at_12.01.26_PM.png)
+*Send USD amount interface with real-time ETH conversion using external price API.*
+
+### 10. USD Transfer Confirmation
+![USD Transfer Confirmation](demo-ss/Screenshot_2025-10-05_at_12.01.38_PM.png)
+*USD transfer review showing converted ETH amount and exchange rate.*
+
+### 11. Transaction Success
+![Transaction Success](demo-ss/Screenshot_2025-10-05_at_12.01.42_PM.png)
+*Success notification after completed transaction with email confirmation details.*
+
+### 12. Transaction History
+![Transaction History](demo-ss/Screenshot_2025-10-05_at_12.01.55_PM.png)
+*Complete transaction history showing all past transfers with timestamps and status.*
+
+### 13. Wallet Management
+![Wallet Management](demo-ss/Screenshot_2025-10-05_at_12.02.06_PM.png)
+*Wallet management interface with options to edit names, delete wallets, and view details.*
+
+### 14. Import Existing Wallet
+![Import Wallet](demo-ss/Screenshot_2025-10-05_at_12.02.26_PM.png)
+*Import existing wallet interface where users can enter their 12-word mnemonic phrase.*
+
 ## 🏗️ Architecture
 
 - **Backend**: Python Flask API with SQLite database
@@ -46,7 +112,8 @@ cd backend
 
 # Create virtual environment
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  
+# On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
