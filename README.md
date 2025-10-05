@@ -24,59 +24,42 @@ Here's a complete walkthrough of the CypherD wallet application:
 
 ### 1. Welcome & Wallet Setup
 ![Welcome Screen](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.55.46%E2%80%AFAM.png)
-*Initial welcome screen where users can create a new wallet or import an existing one.*
 
-### 2. Create New Wallet
+### 2. Create New Wallet using IMPORT EXISTING WALLENT
 ![Create Wallet](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.56.45%E2%80%AFAM.png)
-*Wallet creation interface showing the option to generate a new 12-word mnemonic phrase.*
 
-### 3. Mnemonic Phrase Display
+### 3. Enter the phrase and IMPORT WALLET
 ![Mnemonic Phrase](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.19%E2%80%AFAM.png)
-*Generated mnemonic phrase display with security warning and copy functionality.*
 
-### 4. Mnemonic Confirmation
+### 4. Wallet will be displayed here
 ![Mnemonic Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.26%E2%80%AFAM.png)
-*Verification step where users must enter their mnemonic phrase to confirm wallet creation.*
 
-### 5. Wallet List View
+### 5. You can also create a new wallet and it will be displayed here
 ![Wallet List](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.41%E2%80%AFAM.png)
-*Main wallet dashboard showing all created wallets with balances and management options.*
 
 ### 6. Wallet Dashboard
 ![Wallet Dashboard](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.58.54%E2%80%AFAM.png)
-*Individual wallet dashboard displaying balance, address, and quick actions.*
 
 ### 7. Send ETH Interface
 ![Send ETH](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.59.02%E2%80%AFAM.png)
-*Transfer form for sending ETH to another address with amount input and recipient details.*
 
-### 8. Transaction Confirmation
+### 8. Transaction Histroy Interface
 ![Transaction Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.59.06%E2%80%AFAM.png)
-*Transaction review screen showing details before digital signature approval.*
 
-### 9. USD Transfer Option
+### 9. Copy the Address of the wallet to which we need to send ETH
 ![USD Transfer](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.26%E2%80%AFPM.png)
-*Send USD amount interface with real-time ETH conversion using external price API.*
 
-### 10. USD Transfer Confirmation
+### 10. Enter the Recipient Address and Amount and choose either ETH or USD
 ![USD Transfer Confirmation](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.38%E2%80%AFPM.png)
-*USD transfer review showing converted ETH amount and exchange rate.*
 
-### 11. Transaction Success
+### 11. Sign and Send
 ![Transaction Success](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.42%E2%80%AFPM.png)
-*Success notification after completed transaction with email confirmation details.*
 
 ### 12. Transaction History
 ![Transaction History](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.01.55%E2%80%AFPM.png)
-*Complete transaction history showing all past transfers with timestamps and status.*
 
-### 13. Wallet Management
-![Wallet Management](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.02.06%E2%80%AFPM.png)
-*Wallet management interface with options to edit names, delete wallets, and view details.*
-
-### 14. Import Existing Wallet
+### 13. Notification via Mail
 ![Import Wallet](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.02.26%E2%80%AFPM.png)
-*Import existing wallet interface where users can enter their 12-word mnemonic phrase.*
 
 ## 🏗️ Architecture
 
