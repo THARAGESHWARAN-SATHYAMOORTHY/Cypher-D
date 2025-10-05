@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import requests
-import json
 
 BASE_URL = "http://localhost:5001"
 

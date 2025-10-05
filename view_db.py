@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 import sqlite3
-import json
-from datetime import datetime
 
 def view_database():
     # View all data in the CypherD Wallet database
@@ -14,7 +12,7 @@ def view_database():
         print("=" * 50)
         
         # View Wallets
-        print("\n📊 WALLETS")
+        print("\nWALLETS")
         print("-" * 30)
         cursor.execute("SELECT * FROM wallets ORDER BY created_at DESC")
         wallets = cursor.fetchall()
@@ -30,7 +28,7 @@ def view_database():
             print("No wallets found")
         
         # View Transactions
-        print("\n📝 TRANSACTIONS")
+        print("\nTRANSACTIONS")
         print("-" * 30)
         cursor.execute("SELECT * FROM transactions ORDER BY created_at DESC")
         transactions = cursor.fetchall()
@@ -49,7 +47,7 @@ def view_database():
             print("No transactions found")
         
         # View Pending Transfers
-        print("\n⏳ PENDING TRANSFERS")
+        print("\nPENDING TRANSFERS")
         print("-" * 30)
         cursor.execute("SELECT * FROM pending_transfers ORDER BY created_at DESC")
         pending = cursor.fetchall()
@@ -67,7 +65,7 @@ def view_database():
             print("No pending transfers")
         
         # Summary
-        print(f"\n📈 SUMMARY")
+        print(f"\nSUMMARY")
         print(f"Total Wallets: {len(wallets)}")
         print(f"Total Transactions: {len(transactions)}")
         print(f"Pending Transfers: {len(pending)}")

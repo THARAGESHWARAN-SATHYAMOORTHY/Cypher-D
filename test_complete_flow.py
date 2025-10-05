@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 import requests
-import json
-import time
 from eth_account import Account
-from mnemonic import Mnemonic
 
 BASE_URL = "http://localhost:5001"
 
