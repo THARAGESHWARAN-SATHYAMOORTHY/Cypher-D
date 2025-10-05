@@ -2,7 +2,7 @@
 
 A simple, functional mock web3 wallet application built with Python Flask backend and React frontend. This project demonstrates core Web3 concepts including wallet creation, digital signatures, and transaction verification.
 
-## Features
+## 🎯 Features
 
 - **Wallet Creation & Import**: Generate new 12-word mnemonic phrases or import existing ones
 - **Balance Management**: View mock ETH balances with real-time display
@@ -12,14 +12,14 @@ A simple, functional mock web3 wallet application built with Python Flask backen
 - **Real Notifications**: Email notifications for successful transactions
 - **Security**: Digital signature verification and price tolerance checks
 
-## Demo Video
+## 🎬 Demo Video
 
 Watch the complete CypherD wallet application in action:
 
 https://github.com/user-attachments/assets/c8c5dea7-d0c0-4fd9-b21c-5c0046b822ce
 
 
-## Demo Screenshots
+## 📷 Demo Screenshots
 
 Here's a complete walkthrough of the CypherD wallet application:
 
@@ -62,7 +62,7 @@ Here's a complete walkthrough of the CypherD wallet application:
 ### 13. Notification via Mail
 ![Import Wallet](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.02.26%E2%80%AFPM.png)
 
-## Architecture
+## 🏛️ Architecture
 
 - **Backend**: Python Flask API with SQLite database
 - **Frontend**: React web application with Material-UI
@@ -71,7 +71,7 @@ Here's a complete walkthrough of the CypherD wallet application:
 - **Notifications**: Email via SMTP
 - **Database**: SQLite with SQLAlchemy ORM
 
-## Quick Start
+## 🚀 Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -140,7 +140,7 @@ EMAIL_PASS=your-app-password
 
 > **Note**: For Gmail, you need to use an App Password instead of your regular password.
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 Cypher-D/
@@ -187,7 +187,7 @@ Cypher-D/
 └── README.md             # This file
 ```
 
-## Usage Guide
+## 🎮 Usage Guide
 
 ### 1. Create or Import Wallet
 - **Create New**: Generate a unique 12-word mnemonic phrase
@@ -216,7 +216,7 @@ Cypher-D/
 - Filter by sent/received
 - View transaction details and status
 
-## API Endpoints
+## 🧪 API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -228,7 +228,7 @@ Cypher-D/
 | `GET` | `/api/transactions/:address` | Get transaction history |
 | `GET` | `/api/health` | Health check endpoint |
 
-## Tech Stack
+## 🏗️ Tech Stack
 
 ### Backend
 - **Python 3.8+**: Core language
@@ -249,7 +249,7 @@ Cypher-D/
 - **Skip API**: USD/ETH price conversion
 - **SMTP**: Email notifications
 
-## Security Features
+## 🔒 Security Features
 
 - **Digital Signature Verification**: All transactions require valid signatures
 - **Time-Limited Approvals**: Approval messages expire after 30 seconds
