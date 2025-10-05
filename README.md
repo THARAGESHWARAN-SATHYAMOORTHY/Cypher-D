@@ -2,24 +2,24 @@
 
 A simple, functional mock web3 wallet application built with Python Flask backend and React frontend. This project demonstrates core Web3 concepts including wallet creation, digital signatures, and transaction verification.
 
-## 🎯 Features
+## Features
 
-- **🔐 Wallet Creation & Import**: Generate new 12-word mnemonic phrases or import existing ones
-- **💰 Balance Management**: View mock ETH balances with real-time display
-- **📤 ETH Transfers**: Send mock ETH with digital signature verification
-- **💱 USD Conversion**: Send specific USD amounts with real-time ETH conversion via Skip API
-- **📊 Transaction History**: Complete transaction tracking and display
-- **📧 Real Notifications**: Email notifications for successful transactions
-- **🛡️ Security**: Digital signature verification and price tolerance checks
+- **Wallet Creation & Import**: Generate new 12-word mnemonic phrases or import existing ones
+- **Balance Management**: View mock ETH balances with real-time display
+- **ETH Transfers**: Send mock ETH with digital signature verification
+- **USD Conversion**: Send specific USD amounts with real-time ETH conversion via Skip API
+- **Transaction History**: Complete transaction tracking and display
+- **Real Notifications**: Email notifications for successful transactions
+- **Security**: Digital signature verification and price tolerance checks
 
-## 🎬 Demo Video
+## Demo Video
 
 Watch the complete CypherD wallet application in action:
 
 https://github.com/user-attachments/assets/c8c5dea7-d0c0-4fd9-b21c-5c0046b822ce
 
 
-## 📸 Demo Screenshots
+## Demo Screenshots
 
 Here's a complete walkthrough of the CypherD wallet application:
 
@@ -62,7 +62,7 @@ Here's a complete walkthrough of the CypherD wallet application:
 ### 13. Notification via Mail
 ![Import Wallet](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_12.02.26%E2%80%AFPM.png)
 
-## 🏗️ Architecture
+## Architecture
 
 - **Backend**: Python Flask API with SQLite database
 - **Frontend**: React web application with Material-UI
@@ -71,7 +71,7 @@ Here's a complete walkthrough of the CypherD wallet application:
 - **Notifications**: Email via SMTP
 - **Database**: SQLite with SQLAlchemy ORM
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -140,56 +140,7 @@ EMAIL_PASS=your-app-password
 
 > **Note**: For Gmail, you need to use an App Password instead of your regular password.
 
-## 📱 Usage Guide
-
-### 1. Create or Import Wallet
-- **Create New**: Generate a unique 12-word mnemonic phrase
-- **Import Existing**: Enter your existing mnemonic phrase
-- **Save Securely**: Copy and store your mnemonic phrase safely
-
-### 2. View Your Balance
-- See your mock ETH balance on the dashboard
-- Balance is randomly generated (1-10 ETH) for new wallets
-- Refresh to update balance after transactions
-
-### 3. Send ETH
-- Enter recipient's Ethereum address
-- Choose amount in ETH or USD
-- For USD: Real-time conversion using Skip API
-- Review and approve the transaction
-
-### 4. Transaction Approval
-- Review transaction details
-- Sign the message using your wallet's private key
-- Digital signature proves you own the wallet
-- Transaction is verified and executed
-
-### 5. View History
-- See all your past transactions
-- Filter by sent/received
-- View transaction details and status
-
-## 🔌 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/api/wallet/create` | Create new wallet with mnemonic |
-| `POST` | `/api/wallet/import` | Import existing wallet |
-| `GET` | `/api/wallet/balance/:address` | Get wallet balance |
-| `POST` | `/api/transfer/initiate` | Initiate transfer (returns message to sign) |
-| `POST` | `/api/transfer/execute` | Execute signed transfer |
-| `GET` | `/api/transactions/:address` | Get transaction history |
-| `GET` | `/api/health` | Health check endpoint |
-
-## 🔒 Security Features
-
-- **Digital Signature Verification**: All transactions require valid signatures
-- **Time-Limited Approvals**: Approval messages expire after 30 seconds
-- **Price Tolerance Checks**: USD transfers check for price swings (>1%)
-- **Secure Mnemonic Handling**: Mnemonics stored locally in browser
-- **Address Validation**: Proper Ethereum address format checking
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 Cypher-D/
@@ -236,7 +187,48 @@ Cypher-D/
 └── README.md             # This file
 ```
 
-## 🛠️ Tech Stack
+## Usage Guide
+
+### 1. Create or Import Wallet
+- **Create New**: Generate a unique 12-word mnemonic phrase
+- **Import Existing**: Enter your existing mnemonic phrase
+- **Save Securely**: Copy and store your mnemonic phrase safely
+
+### 2. View Your Balance
+- See your mock ETH balance on the dashboard
+- Balance is randomly generated (1-10 ETH) for new wallets
+- Refresh to update balance after transactions
+
+### 3. Send ETH
+- Enter recipient's Ethereum address
+- Choose amount in ETH or USD
+- For USD: Real-time conversion using Skip API
+- Review and approve the transaction
+
+### 4. Transaction Approval
+- Review transaction details
+- Sign the message using your wallet's private key
+- Digital signature proves you own the wallet
+- Transaction is verified and executed
+
+### 5. View History
+- See all your past transactions
+- Filter by sent/received
+- View transaction details and status
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `POST` | `/api/wallet/create` | Create new wallet with mnemonic |
+| `POST` | `/api/wallet/import` | Import existing wallet |
+| `GET` | `/api/wallet/balance/:address` | Get wallet balance |
+| `POST` | `/api/transfer/initiate` | Initiate transfer (returns message to sign) |
+| `POST` | `/api/transfer/execute` | Execute signed transfer |
+| `GET` | `/api/transactions/:address` | Get transaction history |
+| `GET` | `/api/health` | Health check endpoint |
+
+## Tech Stack
 
 ### Backend
 - **Python 3.8+**: Core language
@@ -257,7 +249,13 @@ Cypher-D/
 - **Skip API**: USD/ETH price conversion
 - **SMTP**: Email notifications
 
-## 🔐 Cryptography & Security
+## Security Features
 
-### Detailed Cryptography Guide
+- **Digital Signature Verification**: All transactions require valid signatures
+- **Time-Limited Approvals**: Approval messages expire after 30 seconds
+- **Price Tolerance Checks**: USD transfers check for price swings (>1%)
+- **Secure Mnemonic Handling**: Mnemonics stored locally in browser
+- **Address Validation**: Proper Ethereum address format checking
+
+## Detailed Cryptography Guide
 For a comprehensive explanation with step-by-step examples of how mnemonic generation, key derivation, and digital signatures work, see **[CRYPTOGRAPHY_EXPLAINED.md](CRYPTOGRAPHY_EXPLAINED.md)**
