@@ -16,7 +16,7 @@ A simple, functional mock web3 wallet application built with Python Flask backen
 
 Watch the complete CypherD wallet application in action:
 
-[![Watch CypherD Wallet Demo](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.55.46%E2%80%AFAM.png)
+![Watch CypherD Wallet Demo](https://github.com/THARAGESHWARAN-SATHYAMOORTHY/Cypher-D/blob/main/demo-ss/Screenshot_2025-10-05_at_11.55.46%E2%80%AFAM.png)
 
 ## 📸 Demo Screenshots
 
