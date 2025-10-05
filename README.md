@@ -83,36 +83,36 @@ Here's a complete walkthrough of the CypherD wallet application:
 The application uses three main tables:
 
 #### 1. `wallets` Table
-    ```sql
-    - id (Integer, Primary Key)
-    - address (String, Unique, Indexed) - Ethereum wallet address
-    - balance (Float) - Current ETH balance
-    - created_at (DateTime) - Wallet creation timestamp
-    ```
+```sql
+- id (Integer, Primary Key)
+- address (String, Unique, Indexed) - Ethereum wallet address
+- balance (Float) - Current ETH balance
+- created_at (DateTime) - Wallet creation timestamp
+```
 
 #### 2. `transactions` Table
-    ```sql
-    - id (Integer, Primary Key)
-    - from_address (String, Indexed) - Sender's wallet address
-    - to_address (String, Indexed) - Recipient's wallet address
-    - amount (Float) - Transaction amount in ETH
-    - amount_usd (Float, Nullable) - USD equivalent (for USD transfers)
-    - status (String) - Transaction status (pending/completed)
-    - signature (Text, Nullable) - Digital signature for verification
-    - created_at (DateTime) - Transaction timestamp
-    ```
+```sql
+- id (Integer, Primary Key)
+- from_address (String, Indexed) - Sender's wallet address
+- to_address (String, Indexed) - Recipient's wallet address
+- amount (Float) - Transaction amount in ETH
+- amount_usd (Float, Nullable) - USD equivalent (for USD transfers)
+- status (String) - Transaction status (pending/completed)
+- signature (Text, Nullable) - Digital signature for verification
+- created_at (DateTime) - Transaction timestamp
+```
 
 #### 3. `pending_transfers` Table
-    ```sql
-    - id (Integer, Primary Key)
-    - from_address (String) - Sender's wallet address
-    - to_address (String) - Recipient's wallet address
-    - amount (Float) - Transfer amount in ETH
-    - amount_usd (Float, Nullable) - USD equivalent
-    - message (Text) - Message to be signed
-    - expires_at (DateTime) - Transfer expiration time
-    - created_at (DateTime) - Transfer initiation timestamp
-    ```
+```sql
+- id (Integer, Primary Key)
+- from_address (String) - Sender's wallet address
+- to_address (String) - Recipient's wallet address
+- amount (Float) - Transfer amount in ETH
+- amount_usd (Float, Nullable) - USD equivalent
+- message (Text) - Message to be signed
+- expires_at (DateTime) - Transfer expiration time
+- created_at (DateTime) - Transfer initiation timestamp
+```
 
 ### Database Features
 - **Automatic Table Creation**: Tables are created automatically when the application starts
